@@ -1,3 +1,3 @@
-# Thank you for watching video. You can easily download website and use it.
+# Thank you.
 
 ### Source: startbootstrap.com
