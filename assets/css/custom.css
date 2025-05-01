@@ -1,0 +1,52 @@
+#contact .contact-block {
+  text-align: center; /* Centers the text */
+  margin: 0 auto; /* Centers the block horizontally */
+}
+
+#contact .contact-block ul {
+  list-style: none; /* Removes bullet points */
+  padding: 0;
+}
+
+#contact .contact-block ul li {
+  margin-bottom: 10px; /* Adds spacing between items */
+  font-size: 18px; /* Adjusts font size */
+}
+
+#contact .contact-block ul li i {
+  margin-right: 10px; /* Adds spacing between icons and text */
+  color: #007bff; /* Changes icon color */
+}
+/* Skill Section Styling */
+.skill-item {
+  margin-bottom: 20px;
+}
+
+.skill-item h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.progress {
+  background-color: #e9ecef;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 20px;
+}
+
+.progress-bar {
+  height: 100%;
+  line-height: 20px;
+  color: #fff;
+  text-align: right;
+  padding-right: 10px;
+  border-radius: 20px;
+  transition: width 1s ease-in-out;
+}
+
+.progress-bar span {
+  font-size: 12px;
+  font-weight: bold;
+}
+/* Add any other CSS rules from the <style> tag here */

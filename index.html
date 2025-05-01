@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <title>Portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    Age
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/css/bootstrap.min.css"
+    />
+    <!-- Fonts -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/fonts/font-awesome.min.css"
+    />
+    <!-- Icon -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/fonts/simple-line-icons.css"
+    />
+    <!-- Slicknav -->
+    <link rel="stylesheet" type="text/css" href="assets/css/slicknav.css" />
+    <!-- Nivo Lightbox -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/css/nivo-lightbox.css"
+    />
+    <!-- Animate -->
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css" />
+    <!-- Main Style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+    <!-- Responsive Style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css" />
+
+    <!-- Add this CSS to your stylesheet or inside a <style> tag in the <head> -->
+    <style>
+      #contact .contact-block {
+        text-align: center; /* Centers the text */
+        margin: 0 auto; /* Centers the block horizontally */
+      }
+
+      #contact .contact-block ul {
+        list-style: none; /* Removes bullet points */
+        padding: 0;
+      }
+
+      #contact .contact-block ul li {
+        margin-bottom: 10px; /* Adds spacing between items */
+        font-size: 18px; /* Adjusts font size */
+      }
+
+      #contact .contact-block ul li i {
+        margin-right: 10px; /* Adds spacing between icons and text */
+        color: #007bff; /* Changes icon color */
+      }
+
+      /* Center portfolio items dynamically */
+      #portfolio {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Centers the items horizontally */
+      }
+
+      #portfolio .mix {
+        display: none; /* Hide all items by default */
+      }
+
+      #portfolio .mix.show {
+        display: block; /* Show only filtered items */
+        margin: 15px; /* Add spacing between items */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header Area wrapper Starts -->
+    <header id="header-wrap">
+      <!-- Navbar Start -->
+      <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar indigo">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#main-navbar"
+              aria-controls="main-navbar"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+              <span class="icon-menu"></span>
+              <span class="icon-menu"></span>
+              <span class="icon-menu"></span>
+            </button>
+            <a href="index.html" class="navbar-brand"
+              ><img src="assets/img/logo.png" alt=""
+            /></a>
+          </div>
+          <div class="collapse navbar-collapse" id="main-navbar">
+            <ul
+              class="onepage-nev navbar-nav mr-auto w-100 justify-content-end clearfix"
+            >
+              <li class="nav-item active">
+                <a class="nav-link" href="#hero-area"> Home </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about"> About </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services"> Services </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#resume"> Resume </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#portfolios"> Work </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact"> Contact </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Mobile Menu Start -->
+        <ul class="onepage-nev mobile-menu">
+          <li>
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#services">Services</a>
+          </li>
+          <li>
+            <a href="#resume">Resume</a>
+          </li>
+          <li>
+            <a href="#portfolio">Work</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+        <!-- Mobile Menu End -->
+      </nav>
+      <!-- Navbar End -->
+
+      <!-- Hero Area Start -->
+      <div id="hero-area" class="hero-area-bg">
+        <div class="overlay"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 col-sm-12 text-center">
+              <div class="contents">
+                <h5 class="script-font wow fadeInUp" data-wow-delay="0.2s"></h5>
+                <h2 class="head-title wow fadeInUp" data-wow-delay="0.4s">
+                  Dipson Thapa
+                </h2>
+                <p
+                  class="script-font wow fadeInUp typing-effect"
+                  data-wow-delay="0.6s"
+                >
+                  Computer Engineering Student
+                </p>
+                <ul class="social-icon wow fadeInUp" data-wow-delay="0.8s">
+                  <li>
+                    <a
+                      class="facebook"
+                      href="https://www.facebook.com/dipson313"
+                      ><i class="icon-social-facebook"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a class="twitter" href="https://github.com/Dipson-bot"
+                      ><i class="icon-social-github"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      class="instagram"
+                      href="https://www.instagram.com/thapa_zee/?hl=en"
+                      ><i class="icon-social-instagram"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      class="linkedin"
+                      href="https://www.linkedin.com/in/dipsonthapa/"
+                      ><i class="icon-social-linkedin"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      class="google"
+                      href="https://mail.google.com/mail/?view=cm&fs=1&to=dipsonthaapa@gmail.com"
+                      ><i class="icon-social-google"></i
+                    ></a>
+                  </li>
+                </ul>
+                <div class="header-button wow fadeInUp" data-wow-delay="1s">
+                  <a
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=dipsonthaapa@gmail.com"
+                    class="btn btn-common"
+                    >Hire Me</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Hero Area End -->
+    </header>
+    <!-- Header Area wrapper End -->
+
+    <!-- About Section Start -->
+    <section id="about" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="img-thumb wow fadeInLeft" data-wow-delay="0.3s">
+              <img
+                class="img-fluid"
+                src="assets/img/about/about-1.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="profile-wrapper wow fadeInRight" data-wow-delay="0.3s">
+              <h3>Hi, I'm Dipson Thapa!</h3>
+              <p>
+                I am a dedicated computer engineering student currently in my
+                8th semester, seeking an internship opportunity to apply my
+                technical knowledge and problem-solving skills in a dynamic
+                environment.
+              </p>
+              <div class="about-profile">
+                <ul class="admin-profile">
+                  <li>
+                    <span class="pro-title"> Name </span>
+                    <span class="pro-detail">Dipson Thapa</span>
+                  </li>
+                  <li>
+                    <span class="pro-title"> Age </span>
+                    <span class="pro-detail">24</span>
+                  </li>
+                  <li>
+                    <span class="pro-title"> Education </span>
+                    <span class="pro-detail"
+                      >Bachelor of Science in Computer Engineering</span
+                    >
+                  </li>
+                  <li>
+                    <span class="pro-title"> Location </span>
+                    <span class="pro-detail">RadheRadhe, Bhaktapur</span>
+                  </li>
+                  <li>
+                    <span class="pro-title"> e-mail </span>
+                    <span class="pro-detail">dipsonthaapa@gmail.com</span>
+                  </li>
+                  <li>
+                    <span class="pro-title"> Phone </span>
+                    <span class="pro-detail">+977-9843546018</span>
+                  </li>
+                  <li>
+                    <span class="pro-title"> Freelance </span>
+                    <span class="pro-detail">Available</span>
+                  </li>
+                </ul>
+              </div>
+              <a href="assets/cv/Resume.pdf" class="btn btn-common" download>
+                <i class="icon-paper-clip"></i> Download Resume
+              </a>
+              <a href="#contact" class="btn btn-danger"
+                ><i class="icon-speech"></i> Contact Me</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Services Section Start -->
+    <section id="services" class="services section-padding">
+      <h2 class="section-title wow flipInX" data-wow-delay="0.4s">
+        My Services
+      </h2>
+      <div class="container">
+        <div class="row">
+          <!-- Services item -->
+          <div class="col-md-6 col-lg-3 col-xs-12">
+            <div class="services-item wow fadeInDown" data-wow-delay="0.3s">
+              <div class="icon">
+                <i class="icon-grid"></i>
+              </div>
+              <div class="services-content">
+                <h3>
+                  <a href="https://github.com/Dipson-bot">Web Development</a>
+                </h3>
+                <p>
+                  I develop modern, responsive, and user-friendly websites using
+                  the latest web technologies like HTML, CSS, and JavaScript.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Services item -->
+          <div class="col-md-6 col-lg-3 col-xs-12">
+            <div class="services-item wow fadeInDown" data-wow-delay="0.6s">
+              <div class="icon">
+                <i class="icon-layers"></i>
+              </div>
+              <div class="services-content">
+                <h3>
+                  <a
+                    href="https://drive.google.com/drive/folders/1rG3-wqEXCMCzL0Aer-xMlgzfTyVBE9vS?usp=sharing"
+                    >Engineering Notes</a
+                  >
+                </h3>
+                <p>
+                  I provide notes and resources related to computer engineering
+                  to help students and professionals enhance their knowledge.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Services item -->
+          <div class="col-md-6 col-lg-3 col-xs-12">
+            <div class="services-item wow fadeInDown" data-wow-delay="0.9s">
+              <div class="icon">
+                <i class="icon-briefcase"></i>
+              </div>
+              <div class="services-content">
+                <h3>
+                  <a
+                    href="https://drive.google.com/drive/folders/1Pgn-Zc6FtBmvbhmzWeUtVsvIQWX-Q_Ay?usp=sharing"
+                    >Projects</a
+                  >
+                </h3>
+                <p>
+                  Here are some projects that I have completed, showcasing my
+                  expertise and knowledge in software development.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Services item -->
+          <div class="col-md-6 col-lg-3 col-xs-12">
+            <div class="services-item wow fadeInDown" data-wow-delay="1.2s">
+              <div class="icon">
+                <i class="icon-bubbles"></i>
+              </div>
+              <div class="services-content">
+                <h3>
+                  <a
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=dipsonthaapa@gmail.com"
+                    >Consultancy</a
+                  >
+                </h3>
+                <p>
+                  I provide general advice on software development, project
+                  management, and technology related solutions and measures.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Services Section End -->
+
+    <!-- Resume Section Start -->
+    <div id="resume" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-6">
+            <div class="education wow fadeInRight" data-wow-delay="0.3s">
+              <ul class="timeline">
+                <li>
+                  <i class="icon-graduation"></i>
+                  <h2 class="timelin-title">Education</h2>
+                </li>
+                <li>
+                  <div class="content-text">
+                    <h3 class="line-title">Nepal Engineering College</h3>
+                    <span>2020 - 2025</span>
+                    <p class="line-text">
+                      Bachelor of Science in Computer Engineering<br />
+                      GPA: 4.0<br />
+                      - Scholarship Award<br />
+                      - Batchwise Project Competition
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div class="content-text">
+                    <h3 class="line-title">Xavier International College</h3>
+                    <span>2018 - 2020</span>
+                    <p class="line-text">
+                      Computer Science<br />
+                      GPA: 3.65<br />
+                      - Member of CS-Society<br />
+                      - CSIT Workshop
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-6">
+            <div class="experience wow fadeInRight" data-wow-delay="0.6s">
+              <ul class="timeline">
+                <li>
+                  <i class="icon-briefcase"></i>
+                  <h2 class="timelin-title">Projects</h2>
+                </li>
+                <li>
+                  <div class="content-text">
+                    <h3 class="line-title">Ishara Setu</h3>
+                    <span>2025</span>
+                    <p class="line-text">
+                      Nepali Sign Language Detection System<br />
+                      - Tools: TensorFlow, OpenCV, MongoDB<br />
+                      - Contribution: Data preprocessing and model development
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div class="content-text">
+                    <h3 class="line-title">Notera</h3>
+                    <span>2024</span>
+                    <p class="line-text">
+                      Notes Management System<br />
+                      - Tools: HTML, CSS, JavaScript, PHP, MySQL<br />
+                      - Contribution: Sign-up & Login Page, session handling,
+                      and frontend work
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Resume Section End -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="section-padding">
+      <div class="container">
+        <h2 class="section-title wow flipInX" data-wow-delay="0.4s">Skills</h2>
+        <div class="row justify-content-center">
+          <div class="col-md-6 text-center">
+            <ul class="skills-list">
+              <li>Programming Languages: Python, PHP, C++</li>
+              <li>Web Technologies: HTML, CSS, Bootstrap, MySQL</li>
+              <li>Machine Learning: TensorFlow, OpenCV</li>
+            </ul>
+          </div>
+          <div class="col-md-6 text-center">
+            <ul class="skills-list">
+              <li>Version Control: Git, GitHub</li>
+              <li>Tools: MS Excel, PowerPoint</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Skills Section End -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolios" class="section-padding">
+      <!-- Container Starts -->
+      <div class="container">
+        <h2 class="section-title wow flipInX" data-wow-delay="0.4s">
+          My Achievements
+        </h2>
+        <div class="row">
+          <div class="col-md-12">
+            <!-- Portfolio Controller/Buttons -->
+            <div class="controls text-center">
+              <a class="filter active btn btn-common" data-filter="all">
+                All
+              </a>
+              <a class="filter btn btn-common" data-filter=".basic"> Basic </a>
+              <a class="filter btn btn-common" data-filter=".intermediate">
+                Intermediate
+              </a>
+            </div>
+            <!-- Portfolio Controller/Buttons Ends-->
+          </div>
+
+          <!-- Portfolio Recent Projects -->
+          <div id="portfolio" class="row wow fadeInDown" data-wow-delay="0.4s">
+            <!-- Basic Image -->
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix basic">
+              <div class="portfolio-item">
+                <div class="shot-item">
+                  <img
+                    src="assets/img/gallery/img-1.jpeg"
+                    alt="Basic Project"
+                  />
+                  <div class="overlay">
+                    <div class="icons">
+                      <a
+                        class="lightbox preview"
+                        href="assets/img/gallery/img-1.jpeg"
+                      >
+                        <i class="icon-eye"></i>
+                      </a>
+                      <a
+                        class="link"
+                        href="https://simpli-web.app.link/e/elHMf28o1Sb"
+                      >
+                        <i class="icon-link"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Intermediate Image 1 -->
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix intermediate">
+              <div class="portfolio-item">
+                <div class="shot-item">
+                  <img
+                    src="assets/img/gallery/img-2.jpeg"
+                    alt="Intermediate Project 1"
+                  />
+                  <div class="overlay">
+                    <div class="icons">
+                      <a
+                        class="lightbox preview"
+                        href="assets/img/gallery/img-2.jpeg"
+                      >
+                        <i class="icon-eye"></i>
+                      </a>
+                      <a
+                        class="link"
+                        href="https://www.coursera.org/account/accomplishments/verify/FTT7EY3GXRQ6"
+                      >
+                        <i class="icon-link"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Intermediate Image 2 -->
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix intermediate">
+              <div class="portfolio-item">
+                <div class="shot-item">
+                  <img
+                    src="assets/img/gallery/img-3.png"
+                    alt="Intermediate Project 2"
+                  />
+                  <div class="overlay">
+                    <div class="icons">
+                      <a
+                        class="lightbox preview"
+                        href="assets/img/gallery/img-3.png"
+                      >
+                        <i class="icon-eye"></i>
+                      </a>
+                      <a
+                        class="link"
+                        href="https://www.freecodecamp.org/certification/DipsonThapa/scientific-computing-with-python-v7"
+                      >
+                        <i class="icon-link"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Portfolio Recent Projects Ends -->
+        </div>
+      </div>
+      <!-- Container Ends -->
+    </section>
+    <!-- Portfolio Section Ends -->
+
+    <!-- Counter Area Start-->
+    <section class="counter-section section-padding">
+      <div class="container">
+        <div class="row">
+          <!-- Counter Item -->
+          <div class="col-md-3 col-sm-6 work-counter-widget text-center">
+            <div class="counter wow fadeInDown" data-wow-delay="0.3s">
+              <div class="icon"><i class="icon-briefcase"></i></div>
+              <div class="counterUp">2</div>
+              <p>Project Working</p>
+            </div>
+          </div>
+          <!-- Counter Item -->
+          <div class="col-md-3 col-sm-6 work-counter-widget text-center">
+            <div class="counter wow fadeInDown" data-wow-delay="0.6s">
+              <div class="icon"><i class="icon-check"></i></div>
+              <div class="counterUp">7</div>
+              <p>Project Done</p>
+            </div>
+          </div>
+          <!-- Counter Item -->
+          <div class="col-md-3 col-sm-6 work-counter-widget text-center">
+            <div class="counter wow fadeInDown" data-wow-delay="0.9s">
+              <div class="icon"><i class="icon-diamond"></i></div>
+              <div class="counterUp">3</div>
+              <p>Awards Received</p>
+            </div>
+          </div>
+          <!-- Counter Item -->
+          <div class="col-md-3 col-sm-6 work-counter-widget text-center">
+            <div class="counter wow fadeInDown" data-wow-delay="1.2s">
+              <div class="icon"><i class="icon-heart"></i></div>
+              <div class="counterUp">4</div>
+              <p>Happy Clients</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Counter Area End-->
+
+    <!-- Contact Section Start -->
+    <section id="contact" class="section-padding">
+      <div class="container">
+        <h2 class="section-title wow flipInX" data-wow-delay="0.4s">
+          Contact Information
+        </h2>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="contact-block">
+              <ul>
+                <li><i class="fa fa-map-marker"></i> RadheRadhe, Bhaktapur</li>
+                <li>
+                  <i class="fa fa-envelope"></i>
+                  <a
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=dipsonthaapa@gmail.com"
+                    target="_blank"
+                  >
+                    dipsonthaapa@gmail.com
+                  </a>
+                </li>
+                <li><i class="fa fa-phone"></i> +977-9843546018</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section End -->
+
+    <!-- Footer Section Start -->
+    <footer class="footer-area section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div
+              class="footer-text text-center wow fadeInDown"
+              data-wow-delay="0.3s"
+            >
+              <ul class="social-icon">
+                <li>
+                  <a class="facebook" href="https://www.facebook.com/dipson313"
+                    ><i class="icon-social-facebook"></i
+                  ></a>
+                </li>
+                <li>
+                  <a class="twitter" href="https://github.com/Dipson-bot"
+                    ><i class="icon-social-github"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="instagram"
+                    href="https://www.instagram.com/thapa_zee/?hl=en"
+                    ><i class="icon-social-instagram"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="linkedin"
+                    href="https://www.linkedin.com/in/dipsonthapa/"
+                    ><i class="icon-social-linkedin"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="google"
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=dipsonthaapa@gmail.com"
+                    ><i class="icon-social-google"></i
+                  ></a>
+                </li>
+              </ul>
+              <p>Copyright © 2020 All Right Reserved</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Go to Top Link -->
+    <a href="#" class="back-to-top">
+      <i class="icon-arrow-up"></i>
+    </a>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assets/js/jquery-min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.mixitup.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/jquery.nav.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/nivo-lightbox.js"></script>
+    <script src="assets/js/jquery.slicknav.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
