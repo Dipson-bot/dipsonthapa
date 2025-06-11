@@ -60,9 +60,9 @@ CNAME         - Custom domain configuration (if applicable)
 
 ---
 
-## Screenshot
+## Portfolio Website
 
-![Portfolio Screenshot](assets/img/screenshot.jpg)
+Visit my portfolio website here: [dipsonthapa.com.np](https://dipsonthapa.com.np)
 
 ---
 
