@@ -64,8 +64,6 @@ CNAME         - Custom domain configuration (if applicable)
 
 Visit my portfolio website here: [dipsonthapa.com.np](https://dipsonthapa.com.np)
 
----
-
 ## Author
 
 [![Email](https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white)](mailto:dipsonthaapa@gmail.com)  
