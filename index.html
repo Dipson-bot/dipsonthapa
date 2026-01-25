@@ -171,6 +171,46 @@
         justify-content: center;
         align-items: center;
       }
+
+      /* Fix text overlap in timeline items */
+      .timeline .content-text {
+        margin-bottom: 20px;
+        clear: both;
+      }
+
+      .timeline .line-text {
+        line-height: 1.6;
+        margin-top: 5px;
+        display: block;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+      }
+
+      .timeline .line-title {
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+
+      .timeline span {
+        display: block;
+        margin-bottom: 10px;
+        font-style: italic;
+        color: #666;
+      }
+
+      /* Make carousel control icons more visible */
+      .carousel-control-prev-icon,
+      .carousel-control-next-icon {
+        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+        border-radius: 50%;
+        padding: 10px;
+      }
+
+      .carousel-control-prev-icon::before,
+      .carousel-control-next-icon::before {
+        color: #fff; /* White color for the arrow icons */
+        font-size: 20px;
+      }
     </style>
     <link
       rel="stylesheet"
@@ -486,11 +526,11 @@
                 </li>
                 <li>
                   <div class="content-text">
-                    <h3 class="line-title">Lab Assistant / Visiting Faculty Member</h3>
+                    <h3 class="line-title">Lab Assistant</h3>
                     <span>Nov 2025 - Present</span>
                     <p class="line-text">
                       Nepal Engineering College (NEC), Bhaktapur, Nepal<br />
-                      • Supported students with coding issues in Python, C, Embedded System, Cybersecurity and data structures.<br />
+                      • Supported students with coding issues in Digital Signal Analysis and Processing, DBMS, Data Science and Software Engineering.<br />
                       • Provided technical troubleshooting for software errors, system crashes, and network issues.
                     </p>
                   </div>
@@ -752,13 +792,6 @@
                       >
                         <i class="icon-eye"></i>
                       </a>
-                      <a
-                        class="link"
-                        href="#"
-                        onclick="document.getElementById('cybersecurityModal').style.display='block'; return false;"
-                      >
-                        <i class="icon-link"></i>
-                      </a>
                     </div>
                   </div>
                 </div>
@@ -779,13 +812,6 @@
                         href="assets/images/award_certificates/nec_ingenium_participate.jpg"
                       >
                         <i class="icon-eye"></i>
-                      </a>
-                      <a
-                        class="link"
-                        href="#"
-                        onclick="document.getElementById('projectCompetitionModal').style.display='block'; return false;"
-                      >
-                        <i class="icon-link"></i>
                       </a>
                     </div>
                   </div>
@@ -808,13 +834,6 @@
                       >
                         <i class="icon-eye"></i>
                       </a>
-                      <a
-                        class="link"
-                        href="#"
-                        onclick="document.getElementById('karmalayaModal').style.display='block'; return false;"
-                      >
-                        <i class="icon-link"></i>
-                      </a>
                     </div>
                   </div>
                 </div>
@@ -836,13 +855,6 @@
                         href="assets/images/certificates/nec_licence.png"
                       >
                         <i class="icon-eye"></i>
-                      </a>
-                      <a
-                        class="link"
-                        href="#"
-                        onclick="document.getElementById('necModal').style.display='block'; return false;"
-                      >
-                        <i class="icon-link"></i>
                       </a>
                     </div>
                   </div>
@@ -1078,45 +1090,7 @@
       </div>
     </div>
 
-    <!-- Batch Topper Modal -->
-    <div class="modal fade" id="batchTopperModal" tabindex="-1" role="dialog" aria-labelledby="batchTopperModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="batchTopperModalLabel">Batch Topper - Spring Semester - Credential</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body text-center">
-            <img src="assets/images/award_certificates/spring_sem_top.jpg" alt="Batch Topper Certificate" class="img-fluid">
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <!-- Project Competition Modal -->
-    <div class="modal fade" id="projectCompetitionModal" tabindex="-1" role="dialog" aria-labelledby="projectCompetitionModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="projectCompetitionModalLabel">Project Competition - Credential</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body text-center">
-            <img src="assets/images/award_certificates/nec_ingenium_participate.jpg" alt="Project Competition Certificate" class="img-fluid">
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <!-- Cybersecurity Modal -->
     <div class="modal fade" id="cybersecurityModal" tabindex="-1" role="dialog" aria-labelledby="cybersecurityModalLabel" aria-hidden="true">
@@ -1157,27 +1131,6 @@
         </div>
       </div>
     </div>
-
-    <!-- Python Modal -->
-    <!-- <div class="modal fade" id="pythonModal" tabindex="-1" role="dialog" aria-labelledby="pythonModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="pythonModalLabel">Python for Beginners - Credential</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body text-center">
-            <p>View your Python for Beginners certificate on Simplilearn:</p>
-            <a href="https://simpli-web.app.link/e/E2Q7t0Daa0b" target="_blank" class="btn btn-primary">View Certificate</a>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div> -->
 
     <!-- Go to Top Link -->
     <a href="#" class="back-to-top">
