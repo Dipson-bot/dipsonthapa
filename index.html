@@ -132,6 +132,16 @@
         padding-top: 120px;
       }
 
+      /* Specific adjustment for Ishara Setu modal to avoid navbar overlap */
+      #isharaModal .modal-dialog-centered {
+        padding-top: 150px;
+      }
+
+      /* Specific adjustment for Karmalaya modal to avoid navbar overlap */
+      #karmalayaModal .modal-dialog-centered {
+        padding-top: 150px;
+      }
+
       @media (min-width: 769px) {
         .modal-dialog-centered {
           align-items: center;
@@ -145,6 +155,21 @@
       /* Add margin to view details buttons in projects section */
       #resume .btn {
         margin: 10px 0;
+      }
+
+      /* Handle vertical certificate alignment */
+      .vertical-cert .shot-item img {
+        object-fit: contain;
+        max-height: 300px;
+        width: auto;
+        margin: 0 auto;
+        display: block;
+      }
+
+      .vertical-cert .portfolio-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
     </style>
     <link
@@ -369,26 +394,7 @@
       <div class="container">
         <div class="row">
           <!-- Services item -->
-          <div class="col-md-6 col-lg-3 col-xs-12">
-            <a href="https://github.com/Dipson-bot" class="services-link">
-              <div class="services-item wow fadeInDown" data-wow-delay="0.3s">
-                <div class="icon">
-                  <i class="fa-solid fa-globe"></i>
-                </div>
-                <div class="services-content">
-                  <h3><a
-                    href="https://github.com/Dipson-bot"
-                    >Web Development</a></h3>
-                  <p>
-                    I develop modern, responsive, and user-friendly websites using
-                    the latest web technologies like HTML, CSS, and JavaScript.
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <!-- Services item -->
-          <div class="col-md-6 col-lg-3 col-xs-12">
+          <div class="col-md-6 col-lg-6 col-xs-12">
             <a href="https://drive.google.com/drive/folders/1rG3-wqEXCMCzL0Aer-xMlgzfTyVBE9vS?usp=sharing" class="services-link">
             <div class="services-item wow fadeInDown" data-wow-delay="0.6s">
               <div class="icon">
@@ -408,7 +414,7 @@
             </div>
           </div>
           <!-- Services item -->
-          <div class="col-md-6 col-lg-3 col-xs-12">
+          <div class="col-md-6 col-lg-6 col-xs-12">
             <a href="https://drive.google.com/drive/folders/1Pgn-Zc6FtBmvbhmzWeUtVsvIQWX-Q_Ay?usp=sharing" class="services-link">
             <div class="services-item wow fadeInDown" data-wow-delay="0.9s">
               <div class="icon">
@@ -428,27 +434,6 @@
               </div>
             </div>
           </div>
-          <!-- Services item -->
-          <div class="col-md-6 col-lg-3 col-xs-12">
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=dipsont171@gmail.com" class="services-link">
-            <div class="services-item wow fadeInDown" data-wow-delay="1.2s">
-              <div class="icon">
-                <i class="fa-solid fa-comments"></i>
-              </div>
-              <div class="services-content">
-                <h3>
-                  <a
-                    href="https://mail.google.com/mail/?view=cm&fs=1&to=dipsont171@gmail.com"
-                    >Consultancy</a
-                  >
-                </h3>
-                <p>
-                  I provide general advice on software development, project
-                  management, and technology related solutions and measures.
-                </p>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
@@ -458,7 +443,7 @@
     <div id="resume" class="section-padding">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6 col-md-6 col-sm-6">
+          <div class="col-lg-4 col-md-6 col-sm-6">
             <div class="education wow fadeInRight" data-wow-delay="0.3s">
               <ul class="timeline">
                 <li>
@@ -492,8 +477,30 @@
               </ul>
             </div>
           </div>
-          <div class="col-lg-6 col-md-6 col-sm-6">
+          <div class="col-lg-4 col-md-6 col-sm-6">
             <div class="experience wow fadeInRight" data-wow-delay="0.6s">
+              <ul class="timeline">
+                <li>
+                  <i class="icon-briefcase"></i>
+                  <h2 class="timelin-title">Work Experience</h2>
+                </li>
+                <li>
+                  <div class="content-text">
+                    <h3 class="line-title">Lab Assistant / Visiting Faculty Member</h3>
+                    <span>Nov 2025 - Present</span>
+                    <p class="line-text">
+                      Nepal Engineering College (NEC), Bhaktapur, Nepal<br />
+                      • Supported students with coding issues in Python, C, Embedded System, Cybersecurity and data structures.<br />
+                      • Provided technical troubleshooting for software errors, system crashes, and network issues.
+                    </p>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="projects wow fadeInRight" data-wow-delay="0.9s">
               <ul class="timeline">
                 <li>
                   <i class="icon-briefcase"></i>
@@ -518,8 +525,7 @@
                     <p class="line-text">
                       Notes Management System<br />
                       - Tools: HTML, CSS, JavaScript, PHP, MySQL<br />
-                      - Contribution: Sign-up & Login Page, session handling,
-                      and frontend work
+                      - Contribution: Sign-up & Login Page, session handling, and frontend work
                     </p>
                     <button type="button" class="btn btn-common" data-toggle="modal" data-target="#noteraModal">View Details</button>
                   </div>
@@ -532,28 +538,13 @@
     </div>
     <!-- Resume Section End -->
 
-    <!-- Skills Section -->
-    <section id="skills" class="section-padding">
-      <div class="container">
-        <h2 class="section-title wow flipInX" data-wow-delay="0.4s">Skills</h2>
-        <div class="row justify-content-center">
-          <div class="col-md-6 text-center">
-            <ul class="skills-list">
-              <li>Programming Languages: Python, PHP, Java, C++</li>
-              <li>Web Technologies: HTML, CSS, Bootstrap, MySQL</li>
-              <li>Machine Learning: TensorFlow, OpenCV</li>
-            </ul>
-          </div>
-          <div class="col-md-6 text-center">
-            <ul class="skills-list">
-              <li>Version Control: Git, GitHub</li>
-              <li>Tools: MS Excel, PowerPoint</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Skills Section End -->
+
+
+
+
+
+
+
 
     <!-- Portfolio Section -->
     <section id="portfolios" class="section-padding">
@@ -569,9 +560,12 @@
               <a class="filter active btn btn-common" data-filter="all">
                 All
               </a>
-              <a class="filter btn btn-common" data-filter=".basic"> Basic </a>
-              <a class="filter btn btn-common" data-filter=".intermediate">
-                Intermediate
+              <a class="filter btn btn-common" data-filter=".course"> Course </a>
+              <a class="filter btn btn-common" data-filter=".participation">
+                Participation
+              </a>
+              <a class="filter btn btn-common" data-filter=".professional">
+                Professional
               </a>
             </div>
             <!-- Portfolio Controller/Buttons Ends-->
@@ -579,13 +573,13 @@
 
           <!-- Portfolio Recent Projects -->
           <div id="portfolio" class="row wow fadeInDown" data-wow-delay="0.4s">
-            <!-- Basic Image -->
-            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix basic">
+            <!-- Course Certifications -->
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix course">
               <div class="portfolio-item">
                 <div class="shot-item">
                   <img
                     src="assets/img/gallery/img-1.jpeg"
-                    alt="Basic Project"
+                    alt="Course Certification 1"
                   />
                   <div class="overlay">
                     <div class="icons">
@@ -607,97 +601,93 @@
               </div>
             </div>
 
-              <!-- Basic Image -->
-              <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix basic">
-                <div class="portfolio-item">
-                  <div class="shot-item">
-                    <img
-                      src="assets/img/gallery/img-4.jpg"
-                      alt="Basic Project"
-                    />
-                    <div class="overlay">
-                      <div class="icons">
-                        <a
-                          class="lightbox preview"
-                          href="assets/img/gallery/img-4.jpg"
-                        >
-                          <i class="icon-eye"></i>
-                        </a>
-                        <a
-                          class="link"
-                          href="https://www.udemy.com/certificate/UC-a6353722-3e94-468a-ad1d-9c8345245148/"
-                        >
-                          <i class="icon-link"></i>
-                        </a>
-                      </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix course">
+              <div class="portfolio-item">
+                <div class="shot-item">
+                  <img
+                    src="assets/img/gallery/img-4.jpg"
+                    alt="Course Certification 2"
+                  />
+                  <div class="overlay">
+                    <div class="icons">
+                      <a
+                        class="lightbox preview"
+                        href="assets/img/gallery/img-4.jpg"
+                      >
+                        <i class="icon-eye"></i>
+                      </a>
+                      <a
+                        class="link"
+                        href="https://www.udemy.com/certificate/UC-a6353722-3e94-468a-ad1d-9c8345245148/"
+                      >
+                        <i class="icon-link"></i>
+                      </a>
                     </div>
                   </div>
                 </div>
               </div>
+            </div>
 
-              <!-- Basic Image -->
-              <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix basic">
-                <div class="portfolio-item">
-                  <div class="shot-item">
-                    <img
-                      src="assets/img/gallery/img-5.jpg"
-                      alt="Basic Project"
-                    />
-                    <div class="overlay">
-                      <div class="icons">
-                        <a
-                          class="lightbox preview"
-                          href="assets/img/gallery/img-5.jpg"
-                        >
-                          <i class="icon-eye"></i>
-                        </a>
-                        <a
-                          class="link"
-                          href="https://www.udemy.com/certificate/UC-872377ce-9886-41e4-bae3-1e27b8429065/"
-                        >
-                          <i class="icon-link"></i>
-                        </a>
-                      </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix course">
+              <div class="portfolio-item">
+                <div class="shot-item">
+                  <img
+                    src="assets/img/gallery/img-5.jpg"
+                    alt="Course Certification 3"
+                  />
+                  <div class="overlay">
+                    <div class="icons">
+                      <a
+                        class="lightbox preview"
+                        href="assets/img/gallery/img-5.jpg"
+                      >
+                        <i class="icon-eye"></i>
+                      </a>
+                      <a
+                        class="link"
+                        href="https://www.udemy.com/certificate/UC-872377ce-9886-41e4-bae3-1e27b8429065/"
+                      >
+                        <i class="icon-link"></i>
+                      </a>
                     </div>
                   </div>
                 </div>
               </div>
+            </div>
 
-              <!-- Basic Image -->
-              <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix basic">
-                <div class="portfolio-item">
-                  <div class="shot-item">
-                    <img
-                      src="assets/img/gallery/img-6.jpg"
-                      alt="Basic Project"
-                    />
-                    <div class="overlay">
-                      <div class="icons">
-                        <a
-                          class="lightbox preview"
-                          href="assets/img/gallery/img-6.jpg"
-                        >
-                          <i class="icon-eye"></i>
-                        </a>
-                        <a
-                          class="link"
-                          href="https://www.udemy.com/certificate/UC-7fcf4c98-89dd-44fe-ab4e-feb7a89d8310/"
-                        >
-                          <i class="icon-link"></i>
-                        </a>
-                      </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix course">
+              <div class="portfolio-item">
+                <div class="shot-item">
+                  <img
+                    src="assets/img/gallery/img-6.jpg"
+                    alt="Course Certification 4"
+                  />
+                  <div class="overlay">
+                    <div class="icons">
+                      <a
+                        class="lightbox preview"
+                        href="assets/img/gallery/img-6.jpg"
+                      >
+                        <i class="icon-eye"></i>
+                      </a>
+                      <a
+                        class="link"
+                        href="https://www.udemy.com/certificate/UC-7fcf4c98-89dd-44fe-ab4e-feb7a89d8310/"
+                      >
+                        <i class="icon-link"></i>
+                      </a>
                     </div>
                   </div>
                 </div>
               </div>
+            </div>
 
-            <!-- Intermediate Image 1 -->
-            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix intermediate">
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix course">
               <div class="portfolio-item">
                 <div class="shot-item">
                   <img
                     src="assets/img/gallery/img-2.jpeg"
-                    alt="Intermediate Project 1"
+                    alt="Course Certification 5"
                   />
                   <div class="overlay">
                     <div class="icons">
@@ -719,13 +709,12 @@
               </div>
             </div>
 
-            <!-- Intermediate Image 2 -->
-            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix intermediate">
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix course">
               <div class="portfolio-item">
                 <div class="shot-item">
                   <img
                     src="assets/img/gallery/img-3.png"
-                    alt="Intermediate Project 2"
+                    alt="Course Certification 6"
                   />
                   <div class="overlay">
                     <div class="icons">
@@ -738,6 +727,120 @@
                       <a
                         class="link"
                         href="https://www.freecodecamp.org/certification/DipsonThapa/scientific-computing-with-python-v7"
+                      >
+                        <i class="icon-link"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Participation Certifications -->
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix participation">
+              <div class="portfolio-item">
+                <div class="shot-item">
+                  <img
+                    src="assets/images/award_certificates/cybersecurity_participate.jpg"
+                    alt="Cybersecurity Workshop"
+                  />
+                  <div class="overlay">
+                    <div class="icons">
+                      <a
+                        class="lightbox preview"
+                        href="assets/images/award_certificates/cybersecurity_participate.jpg"
+                      >
+                        <i class="icon-eye"></i>
+                      </a>
+                      <a
+                        class="link"
+                        href="#"
+                        onclick="document.getElementById('cybersecurityModal').style.display='block'; return false;"
+                      >
+                        <i class="icon-link"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix participation">
+              <div class="portfolio-item">
+                <div class="shot-item">
+                  <img
+                    src="assets/images/award_certificates/nec_ingenium_participate.jpg"
+                    alt="Project Competition"
+                  />
+                  <div class="overlay">
+                    <div class="icons">
+                      <a
+                        class="lightbox preview"
+                        href="assets/images/award_certificates/nec_ingenium_participate.jpg"
+                      >
+                        <i class="icon-eye"></i>
+                      </a>
+                      <a
+                        class="link"
+                        href="#"
+                        onclick="document.getElementById('projectCompetitionModal').style.display='block'; return false;"
+                      >
+                        <i class="icon-link"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix participation vertical-cert">
+              <div class="portfolio-item">
+                <div class="shot-item">
+                  <img
+                    src="assets/images/certificates/karmalaya_X.jpg"
+                    alt="Karmalaya-X"
+                  />
+                  <div class="overlay">
+                    <div class="icons">
+                      <a
+                        class="lightbox preview"
+                        href="assets/images/certificates/karmalaya_X.jpg"
+                      >
+                        <i class="icon-eye"></i>
+                      </a>
+                      <a
+                        class="link"
+                        href="#"
+                        onclick="document.getElementById('karmalayaModal').style.display='block'; return false;"
+                      >
+                        <i class="icon-link"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Professional Certifications -->
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix professional">
+              <div class="portfolio-item">
+                <div class="shot-item">
+                  <img
+                    src="assets/images/certificates/nec_licence.png"
+                    alt="Registered Computer Engineer"
+                  />
+                  <div class="overlay">
+                    <div class="icons">
+                      <a
+                        class="lightbox preview"
+                        href="assets/images/certificates/nec_licence.png"
+                      >
+                        <i class="icon-eye"></i>
+                      </a>
+                      <a
+                        class="link"
+                        href="#"
+                        onclick="document.getElementById('necModal').style.display='block'; return false;"
                       >
                         <i class="icon-link"></i>
                       </a>
@@ -845,7 +948,7 @@
     <!-- Modals for Project Details -->
     <!-- Ishara Setu Modal -->
     <div class="modal fade" id="isharaModal" tabindex="-1" role="dialog" aria-labelledby="isharaModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="isharaModalLabel">Ishara Setu - Project Details</h5>
@@ -901,7 +1004,7 @@
 
     <!-- Notera Modal -->
     <div class="modal fade" id="noteraModal" tabindex="-1" role="dialog" aria-labelledby="noteraModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="noteraModalLabel">Notera - Project Details</h5>
@@ -954,6 +1057,127 @@
         </div>
       </div>
     </div>
+
+    <!-- NEC Licence Modal -->
+    <div class="modal fade" id="necModal" tabindex="-1" role="dialog" aria-labelledby="necModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="necModalLabel">Registered Computer Engineer - Credential</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body text-center">
+            <img src="assets/images/certificates/nec_licence.png" alt="NEC Licence" class="img-fluid">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Batch Topper Modal -->
+    <div class="modal fade" id="batchTopperModal" tabindex="-1" role="dialog" aria-labelledby="batchTopperModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="batchTopperModalLabel">Batch Topper - Spring Semester - Credential</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body text-center">
+            <img src="assets/images/award_certificates/spring_sem_top.jpg" alt="Batch Topper Certificate" class="img-fluid">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project Competition Modal -->
+    <div class="modal fade" id="projectCompetitionModal" tabindex="-1" role="dialog" aria-labelledby="projectCompetitionModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="projectCompetitionModalLabel">Project Competition - Credential</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body text-center">
+            <img src="assets/images/award_certificates/nec_ingenium_participate.jpg" alt="Project Competition Certificate" class="img-fluid">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cybersecurity Modal -->
+    <div class="modal fade" id="cybersecurityModal" tabindex="-1" role="dialog" aria-labelledby="cybersecurityModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="cybersecurityModalLabel">Cybersecurity Workshop - Credential</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body text-center">
+            <img src="assets/images/award_certificates/cybersecurity_participate.jpg" alt="Cybersecurity Workshop Certificate" class="img-fluid">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Karmalaya Modal -->
+    <div class="modal fade" id="karmalayaModal" tabindex="-1" role="dialog" aria-labelledby="karmalayaModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="karmalayaModalLabel">Karmalaya-X: "From Ideas to Impact" - Credential</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body text-center">
+            <img src="assets/images/certificates/karmalaya_X.jpg" alt="Karmalaya-X Certificate" class="img-fluid" style="max-width: 100%; height: auto;">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Python Modal -->
+    <!-- <div class="modal fade" id="pythonModal" tabindex="-1" role="dialog" aria-labelledby="pythonModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="pythonModalLabel">Python for Beginners - Credential</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body text-center">
+            <p>View your Python for Beginners certificate on Simplilearn:</p>
+            <a href="https://simpli-web.app.link/e/E2Q7t0Daa0b" target="_blank" class="btn btn-primary">View Certificate</a>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div> -->
 
     <!-- Go to Top Link -->
     <a href="#" class="back-to-top">
